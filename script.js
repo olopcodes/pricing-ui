@@ -49,7 +49,7 @@ function updatePlanPrice(el, el2, pricesObj, type) {
   const premiumPriceEl = el2.querySelector(".pricing-price");
 
   // update values based on the button clicked
-  if (type === "monthly") {
+  if (type === "month") {
     basicPriceEl.innerHTML = `<span>$${pricesObj.basic.month}</span> per ${type}`;
     premiumPriceEl.innerHTML = `<span>$${pricesObj.premium.month}</span> per ${type}`;
   } else {
